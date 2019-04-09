@@ -33,7 +33,7 @@ Note: you don't need **any** controllers - Spring Data Rest should handle all of
 - Test with unit tests and manually inspecting postgres :ballot_box_with_check:
 - Enable Spring Data REST to create the RESTful routes to GET, POST, PUT, and DELETE :ballot_box_with_check:
 
-<details>
+
 
 ```bash
 curl --request GET \

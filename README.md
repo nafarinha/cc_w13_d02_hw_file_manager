@@ -99,7 +99,7 @@ curl --request GET \
 
 
 
-
+<br>
 
 ```bash
 curl --request GET \
@@ -171,7 +171,7 @@ curl --request GET \
 
 
 
-
+<br>
 
 ```bash
 curl --request GET \
@@ -286,7 +286,7 @@ curl --request GET \
 
 
 
-
+<br>
 
 ```bash
 curl --request POST \
@@ -327,7 +327,7 @@ curl --request POST \
 
 
 
-
+<br>
 
 ```bash
 curl --request POST \
@@ -370,7 +370,7 @@ curl --request POST \
 
 
 
-
+<br>
 
 ```bash
 curl --request POST \
@@ -414,7 +414,7 @@ curl --request POST \
 
 
 
-
+<br>
 
 ```bash
 curl --request PUT \
@@ -451,7 +451,7 @@ curl --request PUT \
 
 
 
-
+<br>
 
 ```bash
 curl --request PUT \
@@ -493,7 +493,7 @@ curl --request PUT \
 
 
 
-
+<br>
 
 ```bash
 curl --request PUT \
@@ -538,17 +538,21 @@ curl --request PUT \
 
 
 
-
+<br>
 
 ```bash
 curl --request DELETE \
   --url http://localhost:8080/users/3
 ```
 
+<br>
+
 ```bash
 curl --request DELETE \
   --url http://localhost:8080/folders/3
 ```
+
+<br>
 
 ```bash
 curl --request DELETE \

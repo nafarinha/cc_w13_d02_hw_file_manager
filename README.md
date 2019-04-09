@@ -29,7 +29,7 @@ Note: you don't need **any** controllers - Spring Data Rest should handle all of
     - a title
     - list of files
     - a user
-- Creata a seeding file `DataLoader` component to pre-seed the database.
+- Creata a seeding file `DataLoader` component to pre-seed the database. :ballot_box_with_check:
 - Test with unit tests and manually inspecting postgres
 - Enable Spring Data REST to create the RESTful routes to GET, POST, PUT, and DELETE
 

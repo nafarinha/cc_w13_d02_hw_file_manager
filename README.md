@@ -40,6 +40,12 @@ curl --request GET \
   --url http://localhost:8080/users
 ```
 
+<details>
+
+<summary>Expand response</summary>
+
+
+
 ```bash
 {
   "_embedded" : {
@@ -89,10 +95,20 @@ curl --request GET \
 }%  
 ```
 
+</details>
+
+
+
 ```bash
 curl --request GET \
   --url http://localhost:8080/folders
 ```
+
+<details>
+
+<summary>Expand response</summary>
+
+
 
 ```bash
 {
@@ -149,10 +165,20 @@ curl --request GET \
 }% 
 ```
 
+</details>
+
+
+
 ```bash
 curl --request GET \
   --url http://localhost:8080/files
 ```
+
+<details>
+
+<summary>Expand response</summary>
+
+
 
 ```bash
 {
@@ -252,6 +278,10 @@ curl --request GET \
 }%  
 ```
 
+</details>
+
+
+
 ```bash
 curl --request POST \
   --url http://localhost:8080/users \
@@ -260,6 +290,15 @@ curl --request POST \
 	"name" : "Jack"
 }'
 ```
+
+<details>
+
+  
+
+
+<summary>Expand response</summary>
+
+
 
 ```bash
 {
@@ -278,6 +317,10 @@ curl --request POST \
 }%     
 ```
 
+</details>
+
+
+
 ```bash
 curl --request POST \
   --url http://localhost:8080/folders \
@@ -287,6 +330,13 @@ curl --request POST \
 	"user" : "http://localhost:8080/users/1"
 }'
 ```
+
+<details>
+  
+
+<summary>Expand response</summary>
+
+
 
 ```bash
 {
@@ -308,6 +358,10 @@ curl --request POST \
 }%  
 ```
 
+</details>
+
+
+
 ```bash
 curl --request POST \
   --url http://localhost:8080/files \
@@ -319,6 +373,13 @@ curl --request POST \
 	"folder" : "http://localhost:8080/folder/1"
 }'
 ```
+
+<details>
+  
+
+  <summary>Expand response</summary>
+
+
 
 ```bash
 {
@@ -339,6 +400,10 @@ curl --request POST \
 }%  
 ```
 
+</details>
+
+
+
 ```bash
 curl --request PUT \
   --url http://localhost:8080/users/3 \
@@ -347,6 +412,11 @@ curl --request PUT \
 	"name" : "Jack Smith"
 }'
 ```
+
+<details>
+  <summary>Expand response</summary>
+
+
 
 ```bash
 {
@@ -365,6 +435,10 @@ curl --request PUT \
 }%  
 ```
 
+</details>
+
+
+
 ```bash
 curl --request PUT \
   --url http://localhost:8080/folders/3 \
@@ -374,6 +448,12 @@ curl --request PUT \
 	"user" : "http://localhost:8080/users/1"
 }'
 ```
+
+<details>
+
+  <summary>Expand response</summary>
+
+
 
 ```bash
 {
@@ -395,6 +475,10 @@ curl --request PUT \
 }% 
 ```
 
+</details>
+
+
+
 ```bash
 curl --request PUT \
   --url http://localhost:8080/files/1 \
@@ -411,7 +495,7 @@ curl --request PUT \
 
 
 
-<summary>Expand</summary>
+<summary>Expand response</summary>
 
 
 

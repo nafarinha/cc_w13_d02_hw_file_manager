@@ -16,7 +16,7 @@ Note: you don't need **any** controllers - Spring Data Rest should handle all of
 
 ### MVP
 
-- Create a system to track files and folders:
+- Create a system to track files and folders: :ballot_box_with_check:
   - A `File` should have:
     - a name
     - extension (e.g. txt, rb, java, ppt)

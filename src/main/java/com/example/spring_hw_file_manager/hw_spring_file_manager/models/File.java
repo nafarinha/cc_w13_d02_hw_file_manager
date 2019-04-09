@@ -18,14 +18,18 @@ public class File {
     @Column
     private String extension;
 
+    @Column
+    private double size;
+
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "folder_id", nullable = false)
     private Folder folder;
 
-    public File(String name, String extension, Folder folder) {
+    public File(String name, String extension, double size, Folder folder) {
         this.name = name;
         this.extension = extension;
+        this.size = size;
         this.folder = folder;
     }
 
@@ -55,6 +59,14 @@ public class File {
 
     public void setExtension(String extension) {
         this.extension = extension;
+    }
+
+    public double getSize() {
+        return size;
+    }
+
+    public void setSize(double size) {
+        this.size = size;
     }
 
     public Folder getFolder() {

@@ -38,7 +38,7 @@ public class HwSpringFileManagerApplicationTests {
 		Folder folder = new Folder("Documents", user);
 		folderRepository.save(folder);
 
-		File file = new File("thesis", ".doc", folder);
+		File file = new File("thesis", ".doc", 6.75, folder);
 		fileRepository.save(file);
 	}
 

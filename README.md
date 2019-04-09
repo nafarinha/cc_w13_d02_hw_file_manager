@@ -99,6 +99,8 @@ curl --request GET \
 
 
 
+
+
 ```bash
 curl --request GET \
   --url http://localhost:8080/folders
@@ -166,6 +168,8 @@ curl --request GET \
 ```
 
 </details>
+
+
 
 
 
@@ -282,6 +286,8 @@ curl --request GET \
 
 
 
+
+
 ```bash
 curl --request POST \
   --url http://localhost:8080/users \
@@ -318,6 +324,8 @@ curl --request POST \
 ```
 
 </details>
+
+
 
 
 
@@ -359,6 +367,8 @@ curl --request POST \
 ```
 
 </details>
+
+
 
 
 
@@ -404,6 +414,8 @@ curl --request POST \
 
 
 
+
+
 ```bash
 curl --request PUT \
   --url http://localhost:8080/users/3 \
@@ -436,6 +448,8 @@ curl --request PUT \
 ```
 
 </details>
+
+
 
 
 
@@ -479,6 +493,8 @@ curl --request PUT \
 
 
 
+
+
 ```bash
 curl --request PUT \
   --url http://localhost:8080/files/1 \
@@ -519,6 +535,8 @@ curl --request PUT \
 ```
 
 </details>
+
+
 
 
 

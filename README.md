@@ -46,54 +46,80 @@ curl --request GET \
 
 
 
-```bash
-{
-  "_embedded" : {
-    "users" : [ {
-      "name" : "Travis",
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/users/1"
-        },
-        "user" : {
-          "href" : "http://localhost:8080/users/1"
-        },
-        "folders" : {
-          "href" : "http://localhost:8080/users/1/folders"
-        }
-      }
-    }, {
-      "name" : "David",
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/users/2"
-        },
-        "user" : {
-          "href" : "http://localhost:8080/users/2"
-        },
-        "folders" : {
-          "href" : "http://localhost:8080/users/2/folders"
-        }
-      }
-    } ]
-  },
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/users{?page,size,sort}",
-      "templated" : true
-    },
-    "profile" : {
-      "href" : "http://localhost:8080/profile/users"
-    }
-  },
-  "page" : {
-    "size" : 20,
-    "totalElements" : 2,
-    "totalPages" : 1,
-    "number" : 0
-  }
-}%  
-```
+>```bash
+>{
+>  "_embedded" : {
+>    "users" : [ {
+>      "name" : "Travis",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/users/1"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/users/1"
+>        },
+>        "folders" : {
+>          "href" : "http://localhost:8080/users/1/folders"
+>        }
+>      }
+>    }, {
+>      "name" : "David",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/users/2"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/users/2"
+>        },
+>        "folders" : {
+>          "href" : "http://localhost:8080/users/2/folders"
+>        }
+>      }
+>    }, {
+>      "name" : "Jack",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/users/4"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/users/4"
+>        },
+>        "folders" : {
+>          "href" : "http://localhost:8080/users/4/folders"
+>        }
+>      }
+>    }, {
+>      "name" : "Jack Smith",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/users/5"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/users/5"
+>        },
+>        "folders" : {
+>          "href" : "http://localhost:8080/users/5/folders"
+>        }
+>      }
+>    } ]
+>  },
+>  "_links" : {
+>    "self" : {
+>      "href" : "http://localhost:8080/users{?page,size,sort}",
+>      "templated" : true
+>    },
+>    "profile" : {
+>      "href" : "http://localhost:8080/profile/users"
+>    }
+>  },
+>  "page" : {
+>    "size" : 20,
+>    "totalElements" : 4,
+>    "totalPages" : 1,
+>    "number" : 0
+>  }
+>}%  
+>```
 
 </details>
 
@@ -112,63 +138,94 @@ curl --request GET \
 
 
 
-```bash
-{
-  "_embedded" : {
-    "folders" : [ {
-      "title" : "Documents",
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/folders/1"
-        },
-        "folder" : {
-          "href" : "http://localhost:8080/folders/1"
-        },
-        "files" : {
-          "href" : "http://localhost:8080/folders/1/files"
-        },
-        "user" : {
-          "href" : "http://localhost:8080/folders/1/user"
-        }
-      }
-    }, {
-      "title" : "Documents",
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/folders/2"
-        },
-        "folder" : {
-          "href" : "http://localhost:8080/folders/2"
-        },
-        "files" : {
-          "href" : "http://localhost:8080/folders/2/files"
-        },
-        "user" : {
-          "href" : "http://localhost:8080/folders/2/user"
-        }
-      }
-    } ]
-  },
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/folders{?page,size,sort}",
-      "templated" : true
-    },
-    "profile" : {
-      "href" : "http://localhost:8080/profile/folders"
-    }
-  },
-  "page" : {
-    "size" : 20,
-    "totalElements" : 2,
-    "totalPages" : 1,
-    "number" : 0
-  }
-}% 
-```
+>```bash
+>{
+>  "_embedded" : {
+>    "folders" : [ {
+>      "title" : "Documents",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/folders/1"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/folders/1"
+>        },
+>        "files" : {
+>          "href" : "http://localhost:8080/folders/1/files"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/folders/1/user"
+>        }
+>      }
+>    }, {
+>      "title" : "Documents",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/folders/2"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/folders/2"
+>        },
+>        "files" : {
+>          "href" : "http://localhost:8080/folders/2/files"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/folders/2/user"
+>        }
+>      }
+>    }, {
+>      "title" : "Applications",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/folders/4"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/folders/4"
+>        },
+>        "files" : {
+>          "href" : "http://localhost:8080/folders/4/files"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/folders/4/user"
+>        }
+>      }
+>    }, {
+>      "title" : "My Applications",
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/folders/5"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/folders/5"
+>        },
+>        "files" : {
+>          "href" : "http://localhost:8080/folders/5/files"
+>        },
+>        "user" : {
+>          "href" : "http://localhost:8080/folders/5/user"
+>        }
+>      }
+>    } ]
+>  },
+>  "_links" : {
+>    "self" : {
+>      "href" : "http://localhost:8080/folders{?page,size,sort}",
+>      "templated" : true
+>    },
+>    "profile" : {
+>      "href" : "http://localhost:8080/profile/folders"
+>    }
+>  },
+>  "page" : {
+>    "size" : 20,
+>    "totalElements" : 4,
+>    "totalPages" : 1,
+>    "number" : 0
+>  }
+>}%    
+>```
 
 </details>
-
 
 
 <br>
@@ -184,103 +241,133 @@ curl --request GET \
 
 
 
-```bash
-{
-  "_embedded" : {
-    "files" : [ {
-      "name" : "todo",
-      "extension" : ".txt",
-      "size" : 1.1,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/files/2"
-        },
-        "file" : {
-          "href" : "http://localhost:8080/files/2"
-        },
-        "folder" : {
-          "href" : "http://localhost:8080/files/2/folder"
-        }
-      }
-    }, {
-      "name" : "homework",
-      "extension" : ".pdf",
-      "size" : 5.1,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/files/3"
-        },
-        "file" : {
-          "href" : "http://localhost:8080/files/3"
-        },
-        "folder" : {
-          "href" : "http://localhost:8080/files/3/folder"
-        }
-      }
-    }, {
-      "name" : "cover_letter",
-      "extension" : ".docx",
-      "size" : 7.2,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/files/4"
-        },
-        "file" : {
-          "href" : "http://localhost:8080/files/4"
-        },
-        "folder" : {
-          "href" : "http://localhost:8080/files/4/folder"
-        }
-      }
-    }, {
-      "name" : "cv",
-      "extension" : ".docx",
-      "size" : 18.7,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/files/5"
-        },
-        "file" : {
-          "href" : "http://localhost:8080/files/5"
-        },
-        "folder" : {
-          "href" : "http://localhost:8080/files/5/folder"
-        }
-      }
-    }, {
-      "name" : "report_FINAL",
-      "extension" : ".docx",
-      "size" : 120.0,
-      "_links" : {
-        "self" : {
-          "href" : "http://localhost:8080/files/1"
-        },
-        "file" : {
-          "href" : "http://localhost:8080/files/1"
-        },
-        "folder" : {
-          "href" : "http://localhost:8080/files/1/folder"
-        }
-      }
-    } ]
-  },
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/files{?page,size,sort}",
-      "templated" : true
-    },
-    "profile" : {
-      "href" : "http://localhost:8080/profile/files"
-    }
-  },
-  "page" : {
-    "size" : 20,
-    "totalElements" : 5,
-    "totalPages" : 1,
-    "number" : 0
-  }
-}%  
-```
+>```bash
+>{
+>  "_embedded" : {
+>    "files" : [ {
+>      "name" : "todo",
+>      "extension" : ".txt",
+>      "size" : 1.1,
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/files/2"
+>        },
+>        "file" : {
+>          "href" : "http://localhost:8080/files/2"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/files/2/folder"
+>        }
+>      }
+>    }, {
+>      "name" : "homework",
+>      "extension" : ".pdf",
+>      "size" : 5.1,
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/files/3"
+>        },
+>        "file" : {
+>          "href" : "http://localhost:8080/files/3"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/files/3/folder"
+>        }
+>      }
+>    }, {
+>      "name" : "cover_letter",
+>      "extension" : ".docx",
+>      "size" : 7.2,
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/files/4"
+>        },
+>        "file" : {
+>          "href" : "http://localhost:8080/files/4"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/files/4/folder"
+>        }
+>      }
+>    }, {
+>      "name" : "cv",
+>      "extension" : ".docx",
+>      "size" : 18.7,
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/files/5"
+>        },
+>        "file" : {
+>          "href" : "http://localhost:8080/files/5"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/files/5/folder"
+>        }
+>      }
+>    }, {
+>      "name" : "report_FINAL",
+>      "extension" : ".docx",
+>      "size" : 120.0,
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/files/1"
+>        },
+>        "file" : {
+>          "href" : "http://localhost:8080/files/1"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/files/1/folder"
+>        }
+>      }
+>    }, {
+>      "name" : "The Matrix",
+>      "extension" : ".mp4",
+>      "size" : 650.0,
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/files/7"
+>        },
+>        "file" : {
+>          "href" : "http://localhost:8080/files/7"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/files/7/folder"
+>        }
+>      }
+>    }, {
+>      "name" : "The Matrix",
+>      "extension" : ".mp4",
+>      "size" : 650.0,
+>      "_links" : {
+>        "self" : {
+>          "href" : "http://localhost:8080/files/8"
+>        },
+>        "file" : {
+>          "href" : "http://localhost:8080/files/8"
+>        },
+>        "folder" : {
+>          "href" : "http://localhost:8080/files/8/folder"
+>        }
+>      }
+>    } ]
+>  },
+>  "_links" : {
+>    "self" : {
+>      "href" : "http://localhost:8080/files{?page,size,sort}",
+>      "templated" : true
+>    },
+>    "profile" : {
+>      "href" : "http://localhost:8080/profile/files"
+>    }
+>  },
+>  "page" : {
+>    "size" : 20,
+>    "totalElements" : 7,
+>    "totalPages" : 1,
+>    "number" : 0
+>  }
+>}%  
+>```
 
 </details>
 
@@ -299,29 +386,29 @@ curl --request POST \
 
 <details>
 
-  
+
 
 
 <summary>Expand response</summary>
 
 
 
-```bash
-{
-  "name" : "Jack",
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/users/4"
-    },
-    "user" : {
-      "href" : "http://localhost:8080/users/4"
-    },
-    "folders" : {
-      "href" : "http://localhost:8080/users/4/folders"
-    }
-  }
-}%     
-```
+>```bash
+>{
+>    "name" : "Jack",
+>    "_links" : {
+>        "self" : {
+>           "href" : "http://localhost:8080/users/6"
+>        },
+>        "user" : {
+>           "href" : "http://localhost:8080/users/6"
+>        },
+>        "folders" : {
+>           "href" : "http://localhost:8080/users/6/folders"
+>        }
+>    }
+>}%      
+>```
 
 </details>
 
@@ -346,25 +433,25 @@ curl --request POST \
 
 
 
-```bash
-{
-  "title" : "Applications",
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/folders/4"
-    },
-    "folder" : {
-      "href" : "http://localhost:8080/folders/4"
-    },
-    "files" : {
-      "href" : "http://localhost:8080/folders/4/files"
-    },
-    "user" : {
-      "href" : "http://localhost:8080/folders/4/user"
-    }
-  }
-}%  
-```
+>```bash
+>{
+>    "title" : "Applications",
+>    "_links" : {
+>        "self" : {
+>           "href" : "http://localhost:8080/folders/6"
+>        },
+>        "folder" : {
+>           "href" : "http://localhost:8080/folders/6"
+>        },
+>        "files" : {
+>           "href" : "http://localhost:8080/folders/6/files"
+>        },
+>        "user" : {
+>           "href" : "http://localhost:8080/folders/6/user"
+>        }
+>    }
+>}%  
+>```
 
 </details>
 
@@ -391,27 +478,26 @@ curl --request POST \
 
 
 
-```bash
-{
-  "name" : "The Matrix",
-  "extension" : ".mp4",
-  "size" : 650.0,
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/files/7"
-    },
-    "file" : {
-      "href" : "http://localhost:8080/files/7"
-    },
-    "folder" : {
-      "href" : "http://localhost:8080/files/7/folder"
-    }
-  }
-}%  
-```
+>```bash
+>{
+>    "name" : "The Matrix",
+>    "extension" : ".mp4",
+>    "size" : 650.0,
+>    "_links" : {
+>        "self" : {
+>           "href" : "http://localhost:8080/files/9"
+>        },
+>        "file" : {
+>           "href" : "http://localhost:8080/files/9"
+>        },
+>        "folder" : {
+>           "href" : "http://localhost:8080/files/9/folder"
+>        }
+>    }
+>}% 
+>```
 
 </details>
-
 
 
 <br>
@@ -426,30 +512,27 @@ curl --request PUT \
 ```
 
 <details>
+
   <summary>Expand response</summary>
 
-
-
-```bash
-{
-  "name" : "Jack Smith",
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/users/5"
-    },
-    "user" : {
-      "href" : "http://localhost:8080/users/5"
-    },
-    "folders" : {
-      "href" : "http://localhost:8080/users/5/folders"
-    }
-  }
-}%  
-```
+>```bash
+>{
+>    "name" : "Jack Smith",
+>    "_links" : {
+>        "self" : {
+>           "href" : "http://localhost:8080/users/7"
+>        },
+>        "user" : {
+>           "href" : "http://localhost:8080/users/7"
+>        },
+>        "folders" : {
+>           "href" : "http://localhost:8080/users/7/folders"
+>        }
+>    }
+>}% 
+>```
 
 </details>
-
-
 
 <br>
 
@@ -469,29 +552,26 @@ curl --request PUT \
 
 
 
-```bash
-{
-  "title" : "My Applications",
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/folders/5"
-    },
-    "folder" : {
-      "href" : "http://localhost:8080/folders/5"
-    },
-    "files" : {
-      "href" : "http://localhost:8080/folders/5/files"
-    },
-    "user" : {
-      "href" : "http://localhost:8080/folders/5/user"
-    }
-  }
-}% 
-```
-
+>```bash
+>{
+>    "title" : "My Applications",
+>    "_links" : {
+>        "self" : {
+>           "href" : "http://localhost:8080/folders/7"
+>        },
+>        "folder" : {
+>           "href" : "http://localhost:8080/folders/7"
+>        },
+>        "files" : {
+>           "href" : "http://localhost:8080/folders/7/files"
+>        },
+>        "user" : {
+>           "href" : "http://localhost:8080/folders/7/user"
+>        }
+>    }
+>}%    
+>```
 </details>
-
-
 
 <br>
 
@@ -508,35 +588,28 @@ curl --request PUT \
 ```
 
 <details>
-
-
-
 <summary>Expand response</summary>
 
-
-
-```bash
-{
-  "name" : "report_FINAL",
-  "extension" : ".docx",
-  "size" : 120.0,
-  "_links" : {
-    "self" : {
-      "href" : "http://localhost:8080/files/1"
-    },
-    "file" : {
-      "href" : "http://localhost:8080/files/1"
-    },
-    "folder" : {
-      "href" : "http://localhost:8080/files/1/folder"
-    }
-  }
-}%  
-```
+>```bash
+>{
+>    "name" : "report_FINAL",
+>    "extension" : ".docx",
+>    "size" : 120.0,
+>    "_links" : {
+>        "self" : {
+>           "href" : "http://localhost:8080/files/1"
+>        },
+>        "file" : {
+>           "href" : "http://localhost:8080/files/1"
+>        },
+>        "folder" : {
+>           "href" : "http://localhost:8080/files/1/folder"
+>        }
+>    }
+>}% 
+>```
 
 </details>
-
-
 
 <br>
 
@@ -560,7 +633,10 @@ curl --request DELETE \
 ```
 
 
-
 ## Planning
 
 Draw a diagram detail the relationships between models.
+
+```
+
+```
